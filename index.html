@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYR to JPY Conversion Fee Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Touch'n Go MYR & JPY Conversion Fee Calculator</h1>
+        <div class="form-group">
+            <label for="currency">Select Currency:</label>
+            <select id="currency">
+                <option value="JPYtoMYR">JPY to MYR</option>
+                <option value="MYRtoJPY">MYR to JPY</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+        </div>
+
+        <div class="form-group">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
